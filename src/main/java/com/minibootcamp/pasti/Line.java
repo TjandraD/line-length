@@ -17,6 +17,6 @@ public class Line {
         final double x = x1 - x2;
         final double y = y1 - y2;
 
-        return (x + y) * -1;
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
 }
