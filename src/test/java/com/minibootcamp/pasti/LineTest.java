@@ -26,4 +26,14 @@ public class LineTest {
 
         assertEquals(expectedResult, lineLength, DELTA_OFFSET);
     }
+
+    @Test
+    public void calculateDistance_ReturnLength_WhenLineIsVertical() {
+        Line line = new Line(0, -5, 0, 0);
+
+        double lineLength = line.calculateLength();
+        final double expectedResult = 5;
+
+        assertEquals(expectedResult, lineLength, DELTA_OFFSET);
+    }
 }
