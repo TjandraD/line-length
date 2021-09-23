@@ -19,4 +19,8 @@ public class Line {
 
         return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
+
+    public boolean compareLine(Line line) {
+        return true;
+    }
 }
